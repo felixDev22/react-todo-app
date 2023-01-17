@@ -1,5 +1,5 @@
+/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-
 
 class TodoContainer extends React.Component {
   render() {
