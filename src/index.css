@@ -30,10 +30,21 @@ body {
   padding-left: 5%;
 }
 
-.Menu-bar{
+.Menu-bar {
   width:15%;
 }
 
-.Menu-bar img{
+.Menu-bar img {
   color: #fff;
+}
+
+.close {
+  width: 70px;
+  margin-left: -63px;
+  margin-top: -8px;
+  position: absolute;
+}
+
+.not-active{
+  display:none;
 }
