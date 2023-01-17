@@ -2,6 +2,8 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import TodosList from './TodosList';
+import Header from './Header';
+import Navbar from './Navbar';
 
 class TodoContainer extends React.Component {
   constructor(props) {
@@ -29,9 +31,11 @@ class TodoContainer extends React.Component {
 
   render() {
     return (
-      <ul>
+      <div>
+        <Navbar />
+        <Header />
         <TodosList todos={this.state.todos} />
-      </ul>
+      </div>
     );
   }
 }

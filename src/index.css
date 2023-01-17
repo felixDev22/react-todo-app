@@ -10,5 +10,18 @@
 }
 
 body {
-background: #61dafb;
+  background-color: #61dafb;
+}
+
+.container {
+  padding: 20px 8%;
+}
+
+.Nav-bar{
+  max-width: 200px;
+  background-color:#1010c0; 
+}
+
+.Menu-bar{
+  width:30%;
 }
