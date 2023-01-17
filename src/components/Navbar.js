@@ -16,6 +16,10 @@ const Navbar = () => {
           src={close}
           alt="close"
         />
+        <ul className="Menu-links">
+          <li>HOME</li>
+          <li>ABOUT</li>
+        </ul>
       </div>
     </nav>
   );
