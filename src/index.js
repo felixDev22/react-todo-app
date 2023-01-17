@@ -5,4 +5,9 @@ import './index.css';
 
 // component file
 
-ReactDOM.render(<TodoContainer />, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <TodoContainer />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
