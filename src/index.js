@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom";
 import './index.css';
+import TodoContainer from "./components/TodoContainer";
 import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
+// component file
+
+
+ReactDOM.render(<TodoContainer />, document.getElementById("root"));
