@@ -87,19 +87,44 @@ body {
 .task-input {
   width: 100%;
   padding: 20px 40px;
-  border-radius: 20px;
+  border-radius: 40px;
   border: 1px solid #cecece;
-  font-size: 1.5rem;
+  font-size: 1rem;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-button {
+.add-Btn {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #07e777;
   font-size: 1.5rem;
+}
+
+.todo-Container {
+  max-width: 500px;
+  background: rgb(134, 217, 247);
+  padding: 20px 40px;
+  margin: 20px auto;
+  border-radius: 40px;
+}
+
+.checkbox {
+  margin-right: 10px;
+  width: 5%;
+}
+
+.trash {
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  width: 1.5%;
+}
+
+.textInput {
+  width: 100%;
+  padding: 10px;
 }
