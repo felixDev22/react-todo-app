@@ -54,6 +54,7 @@ const TodoItem = ({
         >
           <input
             type="checkbox"
+            id="check"
             className={styles.checkbox}
             checked={completed}
             onChange={() => handleChangeProps(id)}
@@ -72,6 +73,7 @@ const TodoItem = ({
         </div>
         <input
           type="text"
+          id="text"
           style={editMode}
           className={styles.textInput}
           value={updateTodo}
