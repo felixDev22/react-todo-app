@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import trash from '../images/trash.svg';
+import trash from '../images/trash-can.svg';
 import styles from '../index.css';
 
 const TodoItem = ({
