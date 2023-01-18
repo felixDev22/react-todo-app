@@ -4,7 +4,6 @@ import TodoContainer from './components/TodoContainer';
 import './index.css';
 
 // component file
-
 ReactDOM.render(
   <React.StrictMode>
     <TodoContainer />
