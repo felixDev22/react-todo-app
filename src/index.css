@@ -73,16 +73,30 @@ body {
 }
 
 .form-area {
-  display: flex;
   max-width: 700px;
   height: auto;
   margin: 20px auto;
   justify-content: center;
+  position: relative;
 }
 
 .task-input {
-   width: 100%;
-    padding: 20px 40px;
-    border-radius: 20px;
-    border: 1px solid #cecece;
+  width: 100%;
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: 1px solid #cecece;
+  font-size: 1.5rem;
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #07e777;
+  justify-content: center;
+  font-size: 1.5rem;
 }

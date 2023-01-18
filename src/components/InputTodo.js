@@ -32,19 +32,20 @@ const FormInput = ({ addTodosTask }) => {
     <form
       className="form-area"
       onSubmit={handleSubmit}>
+
       <input
         type="text"
-        placeholder="Add todo..."
         className="task-input"
         value={inputTodo.title}
         name="title"
         onChange={onChange}
-      />
+        placeholder="Add todo..." />
       <button
         type="submit"
         className="add-Btn">
-        Add
+        +
       </button>
+
     </form>
   );
 };
