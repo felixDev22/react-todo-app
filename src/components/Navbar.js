@@ -5,10 +5,10 @@ import close from '../images/close.svg';
 
 const Navbar = () => {
   return (
-    <nav className="Nav-bar">
+    <nav className="Nav-bar not-active">
       <div className="Menu-bar">
         <img
-          className="menu not-active"
+          className="menu"
           src={menu}
           alt="menu"
         />
