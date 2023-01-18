@@ -1,15 +1,37 @@
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable react/destructuring-assignment */
-// import React from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+import TodoItem from './TodoItem';
 
-// class TodosList extends React.Component {
-//   render() {
-//     return (
-//       <ul>
-//         <p> To DOS LIST</p>
-//       </ul>
-//     );
-//   }
-// }
+const TodosList = ({
+  todos,
+  handleChangeProps,
+  deleteTodoProps,
+  setUpdate,
+}) => (
+  <ul className="todo-items">
+    {todos.map((todo) => (
+      <TodoItem
+        key={todo.id}
+        todo={todo}
+        handleChangeProps={handleChangeProps}
+        deleteTodoProps={deleteTodoProps}
+        setUpdate={setUpdate}
+      />
+    ))}
+  </ul>
+);
 
-// export default TodosList;
+TodosList.propTypes = {
+  todos: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      title: PropTypes.string,
+      completed: PropTypes.bool,
+    }),
+  ).isRequired,
+  handleChangeProps: PropTypes.func.isRequired,
+  deleteTodoProps: PropTypes.func.isRequired,
+  setUpdate: PropTypes.func.isRequired,
+};
+
+export default TodosList;
