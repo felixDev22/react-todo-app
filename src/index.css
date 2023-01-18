@@ -23,16 +23,22 @@ body {
   padding: 20px 8%;
 }
 
-.Nav-bar{
-  max-width: 480px;
-  height: 100vh;
-  background-color:#08838ef0;
-  padding-top: 5%;
-  padding-left: 5%;
+.Nav-bar {
+  position: relative;
 }
 
-.Menu-bar {
-  width: 15%;
+.menu {
+  width: 5%;
+  padding-left: 8%;
+  padding-top: 5%;
+}
+
+.Menu-pop {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  background-color:#08838ef0;
 }
 
 .Menu-bar img {
@@ -40,9 +46,9 @@ body {
 }
 
 .close {
-  width: 70px;
-  padding-left: 5%;
-  padding-top: 5%;
+  width: 50px;
+  padding-left: 10%;
+  padding-top: 10%;
   /* position: absolute; */
 }
 
@@ -65,7 +71,6 @@ body {
 
 .header {
   display: flex;
-  margin-top: 40vh;
   justify-content: center;
   font-size: 7rem;
   font-weight: 600;
@@ -73,7 +78,7 @@ body {
 }
 
 .form-area {
-  max-width: 700px;
+  max-width: 500px;
   height: auto;
   margin: 20px auto;
   justify-content: center;

@@ -5,13 +5,14 @@ import close from '../images/close.svg';
 
 const Navbar = () => {
   return (
-    <nav className="Nav-bar not-active">
-      <div className="Menu-bar">
-        <img
-          className="menu"
-          src={menu}
-          alt="menu"
-        />
+    <nav className="Nav-bar">
+      <img
+        className="menu"
+        src={menu}
+        alt="menu"
+      />
+
+      <div className="Menu-pop">
         <img
           className="close"
           src={close}
