@@ -1,43 +1,43 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prefer-stateless-function */
-import React from 'react';
-import TodosList from './TodosList';
+import React, { useState, useEffect } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import Header from './Header';
 import Navbar from './Navbar';
+import InputTodo from './InputTodo';
 
-class TodoContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      todos: [
-        {
-          id: 1,
-          title: 'Setup development environment',
-          completed: true,
-        },
-        {
-          id: 2,
-          title: 'Develop website and add content',
-          completed: false,
-        },
-        {
-          id: 3,
-          title: 'Deploy to live server',
-          completed: false,
-        },
-      ],
+function InitialTodos() {
+  // getting stored items
+  const temp = localStorage.getItem('todos');
+  const savedTodos = JSON.parse(temp);
+  return savedTodos || [];
+}
+
+const TodoContainer = () => {
+  const [todos, setTodos] = useState(InitialTodos()); // eslint-disabled-line
+
+  useEffect(() => {
+    // storing todos items
+    const temp = JSON.stringify(todos);
+    localStorage.setItem('todos', temp);
+  }, [todos]);
+
+  const addTodosTask = (title) => {
+    const newTodo = {
+      id: uuidv4(),
+      title,
+      completed: false,
     };
-  }
+    setTodos([...todos, newTodo]);
+  };
 
-  render() {
-    return (
+  return (
+    <>
       <div>
         <Navbar />
         <Header />
-        <TodosList todos={this.state.todos} />
+        <InputTodo addTodosTask={addTodosTask} />
       </div>
-    );
-  }
-}
+    </>
+  );
+};
 
 export default TodoContainer;
