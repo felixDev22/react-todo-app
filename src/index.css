@@ -106,25 +106,34 @@ body {
 
 .todo-Container {
   max-width: 500px;
-  background: rgb(134, 217, 247);
-  padding: 20px 40px;
+  background: #0cc5de;
+  padding: 18px 40px;
   margin: 20px auto;
   border-radius: 40px;
 }
 
-.checkbox {
-  margin-right: 10px;
-  width: 5%;
+#check {
+  float: left;
+  width: 20px;
+  margin-top: 4px;
 }
 
 .trash {
   font-size: 13px;
+  float: right;
   cursor: pointer;
   outline: none;
-  width: 1.5%;
+  width: 5%;
 }
 
 .textInput {
   width: 100%;
-  padding: 10px;
+  font-size: 1.2rem;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  margin-left: 20px;
 }
