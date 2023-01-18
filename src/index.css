@@ -14,9 +14,9 @@
   --light-green:#07e777;
 }
 
-
 body {
-  background-color: #61dafb;
+  background: #61dafb;
+  letter-spacing: 0.2rem;
 }
 
 .container {
@@ -59,6 +59,6 @@ body {
   padding-left: 5%;
 }
 
-.Menu-links li{
+.Menu-links li {
   margin-bottom: 40px;
 }
