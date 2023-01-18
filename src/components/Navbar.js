@@ -8,11 +8,12 @@ const Navbar = () => {
     <nav className="Nav-bar">
       <div className="Menu-bar">
         <img
+          className="menu not-active"
           src={menu}
           alt="menu"
         />
         <img
-          className="close not-active"
+          className="close"
           src={close}
           alt="close"
         />
