@@ -71,3 +71,18 @@ body {
   font-weight: 600;
   color: #cecece;
 }
+
+.form-area {
+  display: flex;
+  max-width: 700px;
+  height: auto;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.task-input {
+   width: 100%;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: 1px solid #cecece;
+}
