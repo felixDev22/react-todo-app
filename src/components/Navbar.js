@@ -11,8 +11,7 @@ const Navbar = () => {
         src={menu}
         alt="menu"
       />
-
-      <div className="Menu-pop">
+      <div className="Menu-pop not-active">
         <img
           className="close"
           src={close}

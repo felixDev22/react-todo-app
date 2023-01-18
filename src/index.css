@@ -25,12 +25,14 @@ body {
 
 .Nav-bar {
   position: relative;
+  width: 100%;
+  height: 80px;
 }
 
 .menu {
   width: 40px;
-  margin-left: 15%;
-  margin-top: 15%; 
+  margin-left: 2%;
+  margin-top: 2%; 
 }
 
 .Menu-pop {
@@ -39,10 +41,6 @@ body {
   height: 800px;
   top: 0;
   background-color:#08838ef0;
-}
-
-.Menu-bar img {
-  color: #fff;
 }
 
 .close {
@@ -71,9 +69,11 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  font-size: 7rem;
+  align-items: center;
+  font-size: 5rem;
   font-weight: 600;
   color: #cecece;
+  margin-top: 12%;
 }
 
 .form-area {
