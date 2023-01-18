@@ -28,15 +28,15 @@ body {
 }
 
 .menu {
-  width: 5%;
-  padding-left: 8%;
-  padding-top: 5%;
+  width: 40px;
+  margin-left: 15%;
+  margin-top: 15%; 
 }
 
 .Menu-pop {
   position: absolute;
   width: 200px;
-  height: 100vh;
+  height: 800px;
   top: 0;
   background-color:#08838ef0;
 }
@@ -46,10 +46,9 @@ body {
 }
 
 .close {
-  width: 50px;
-  padding-left: 10%;
-  padding-top: 10%;
-  /* position: absolute; */
+  width: 40px;
+  margin-left: 15%;
+  margin-top: 15%; 
 }
 
 .not-active {
@@ -58,11 +57,11 @@ body {
 
 .Menu-links {
   color: #07e777;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   font-weight: bold;
-  margin-top: 80%;
-  padding-left: 5%;
+  margin-top: 40%;
+  margin-left: 15%;
 }
 
 .Menu-links li {
