@@ -1,0 +1,145 @@
+/* stylelint-disable no-missing-end-of-source-newline */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+}
+
+:root {
+  --light-blue: #2edffe;
+  --light-green: #07e777;
+}
+
+body {
+  background: var(-light-blue);
+  letter-spacing: 0.1rem;
+}
+
+.container {
+  padding: 20px 8%;
+}
+
+.Nav-bar {
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+
+.menu {
+  width: 40px;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.Menu-pop {
+  position: absolute;
+  width: 200px;
+  height: 800px;
+  top: 0;
+  background-color: #08838ef0;
+}
+
+.close {
+  width: 40px;
+  margin-left: 15%;
+  margin-top: 15%;
+}
+
+.active {
+  display: flex;
+}
+
+.not-active {
+  display: none;
+}
+
+.Menu-links {
+  color: #07e777;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  margin-top: 40%;
+  margin-left: 15%;
+}
+
+.Menu-links li {
+  margin-bottom: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #cecece;
+  margin-top: 12%;
+}
+
+.form-area {
+  max-width: 500px;
+  height: auto;
+  margin: 20px auto;
+  justify-content: center;
+  position: relative;
+}
+
+.task-input {
+  width: 100%;
+  padding: 20px 40px;
+  border-radius: 40px;
+  border: 1px solid #cecece;
+  font-size: 1rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.add-Btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #07e777;
+  font-size: 1.5rem;
+}
+
+.todo-Container {
+  max-width: 500px;
+  background: #0cc5de;
+  padding: 18px 40px;
+  margin: 20px auto;
+  border-radius: 40px;
+}
+
+#check {
+  float: left;
+  width: 20px;
+  margin-top: 4px;
+}
+
+.trash {
+  font-size: 13px;
+  float: right;
+  cursor: pointer;
+  outline: none;
+  width: 5%;
+  margin-top: -4px;
+  margin-right: -20px;
+}
+
+.textInput {
+  width: 100%;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
