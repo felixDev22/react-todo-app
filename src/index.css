@@ -40,13 +40,13 @@ body {
   width: 200px;
   height: 800px;
   top: 0;
-  background-color:#08838ef0;
+  background-color: #08838ef0;
 }
 
 .close {
   width: 40px;
   margin-left: 15%;
-  margin-top: 15%; 
+  margin-top: 15%;
 }
 
 .active {
