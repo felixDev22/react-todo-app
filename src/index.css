@@ -16,7 +16,7 @@
 
 body {
   background: var(-light-blue);
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
 .menu {
   width: 40px;
   margin-left: 2%;
-  margin-top: 2%; 
+  margin-top: 2%;
 }
 
 .Menu-pop {
@@ -47,6 +47,10 @@ body {
   width: 40px;
   margin-left: 15%;
   margin-top: 15%; 
+}
+
+.active {
+  display: flex;
 }
 
 .not-active {
@@ -124,11 +128,12 @@ body {
   cursor: pointer;
   outline: none;
   width: 5%;
+  margin-top: -4px;
+  margin-right: -20px;
 }
 
 .textInput {
   width: 100%;
-  font-size: 1.2rem;
   gap: 60px;
   align-items: center;
   justify-content: space-around;
@@ -136,4 +141,5 @@ body {
 
 span {
   margin-left: 20px;
+  font-size: 1.2rem;
 }
